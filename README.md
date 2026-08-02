@@ -111,21 +111,28 @@ To ensure reliable model evaluation, multiple classification metrics were consid
 
 ---
 
-# 🛠️ Technology Stack
+## 🛠️ Technology Stack
 
-The project leverages a modern Python-based machine learning ecosystem for data processing, visualization, predictive modeling, and explainable artificial intelligence.
+The project leverages a complete machine learning ecosystem for data preprocessing, feature engineering, predictive modeling, explainable AI, visualization, and real-time deployment.
 
 | Category | Technologies |
 |----------|--------------|
-| **Programming Language** | Python |
-| **Data Analysis** | Pandas, NumPy |
-| **Data Visualization** | Matplotlib, Seaborn, Plotly |
-| **Machine Learning** | Scikit-learn, XGBoost |
-| **Explainable AI** | SHAP |
-| **Development Environment** | Google Colab |
-| **Version Control** | Git & GitHub |
+| Programming Language | Python |
+| Data Processing | Pandas, NumPy |
+| Data Visualization | Matplotlib, Seaborn, Plotly |
+| Machine Learning | Scikit-learn, XGBoost |
+| Ensemble Learning | Stacking Classifier, Random Forest, Logistic Regression |
+| Model Explainability | SHAP |
+| Data Preprocessing | Label Encoding, One-Hot Encoding, StandardScaler |
+| Model Optimization | Hyperparameter Tuning, Cross Validation |
+| Web Application | Streamlit |
+| Development Environment | Google Colab, VS Code |
+| Model Serialization | Pickle (.pkl), JSON |
+| Version Control | Git & GitHub |
+| Deployment | Streamlit Cloud |
 
 ---
+
 
 # 🔄 Project Workflow
 
