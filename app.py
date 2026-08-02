@@ -87,9 +87,9 @@ st.markdown("""
 --surface:#0F172A;
 --surface-2:#111827;
 
---text:#F8FAFC;
---text-secondary:#CBD5E1;
---text-muted:#94A3B8;
+--text:#FFFFFF;
+--text-secondary:#FFFFFF;
+--text-muted:#E2E8F0;
 
 --border:rgba(255,255,255,.08);
 
@@ -196,7 +196,7 @@ font-weight:700;
 
 h3{
 
-font-size:28px;
+font-size:30px;
 
 font-weight:700;
 
@@ -204,15 +204,19 @@ font-weight:700;
 
 p{
 
-color:var(--text-secondary);
+color:#F1F5F9;
 
-line-height:1.8;
+font-size:16px;
+
+line-height:1.9;
 
 }
 
 .glass-card{
 
-background:rgba(17,24,39,.72);
+color:#FFFFFF;
+
+background:rgba(17,24,39,.85);
 
 backdrop-filter:blur(18px);
 
@@ -272,9 +276,11 @@ border-color:#38BDF8;
 
 .metric-title{
 
-font-size:15px;
+font-size:16px;
 
-color:#94A3B8;
+font-weight:600;
+
+color:#E2E8F0;
 
 margin-bottom:12px;
 
@@ -314,7 +320,7 @@ linear-gradient(
 
 .section-title{
 
-font-size:34px;
+font-size:38px;
 
 font-weight:800;
 
@@ -326,9 +332,9 @@ margin-bottom:8px;
 
 .section-subtitle{
 
-font-size:16px;
+font-size:17px;
 
-color:#94A3B8;
+color:#CBD5E1;
 
 margin-bottom:28px;
 
@@ -1314,7 +1320,8 @@ with chart_col1:
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
         font=dict(
-            color="white"
+             color="#E5E7EB",
+             size=16
         )
     )
 
@@ -1359,7 +1366,8 @@ with chart_col2:
         height=350,
         paper_bgcolor="rgba(0,0,0,0)",
         font=dict(
-            color="white"
+           color="#E5E7EB",
+           size=16
         )
     )
 
@@ -1820,13 +1828,32 @@ fig3 = go.Figure(
 
 
 fig3.update_layout(
-    title="Top Lead Conversion Drivers",
+    title=dict(
+        text="Top Lead Conversion Drivers",
+        font=dict(
+            size=20,
+            color="#FFFFFF"
+        )
+    ),
     height=450,
     paper_bgcolor="rgba(0,0,0,0)",
     plot_bgcolor="rgba(0,0,0,0)",
-    font={
-        "color":"white"
-    }
+    font=dict(
+        color="#FFFFFF",
+        size=16
+    ),
+    xaxis=dict(
+        tickfont=dict(
+            size=14,
+            color="#E5E7EB"
+        )
+    ),
+    yaxis=dict(
+        tickfont=dict(
+            size=14,
+            color="#E5E7EB"
+        )
+    )
 )
 
 

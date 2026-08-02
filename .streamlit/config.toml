@@ -1,0 +1,13 @@
+[theme]
+
+base="dark"
+
+primaryColor="#2563EB"
+
+backgroundColor="#020617"
+
+secondaryBackgroundColor="#111827"
+
+textColor="#FFFFFF"
+
+font="Inter"
