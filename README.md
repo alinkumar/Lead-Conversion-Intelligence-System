@@ -335,17 +335,57 @@ Based on the predictive analysis and model explainability, the following recomme
 
 ---
 
+# 🖥️ Streamlit Application Preview
+
+The project has been deployed as an interactive Streamlit application that enables real-time lead conversion prediction and business intelligence analysis.
+
+## 🚀 Prediction Workspace
+
+<div align="center">
+<img src="images/prediction_workspace.png" width="90%">
+</div>
+
+
+## 🎯 Prediction Result
+
+<div align="center">
+<img src="images/prediction_result.png" width="90%">
+</div>
+
+
+## 📊 Analytics Dashboard
+
+<div align="center">
+<img src="images/analytics_dashboard.png" width="90%">
+</div>
+
+
+## 🤖 AI Business Intelligence
+
+<div align="center">
+<img src="images/ai_business_intelligence.png" width="90%">
+</div>
+
+
+## 🔍 Feature Insights
+
+<div align="center">
+<img src="images/feature_insights.png" width="90%">
+</div>
+
+---
+
 # 🚀 Future Scope
 
-This project can be further enhanced by extending it into a complete production-ready business solution.
+The current system provides real-time lead conversion prediction through an interactive Streamlit application. Future enhancements can focus on scalability, automation, and enterprise integration.
 
 Potential future improvements include:
 
-- Deploy the trained model using **Flask**, **FastAPI**, or **Streamlit** for real-time lead prediction.
-- Integrate the prediction engine with CRM platforms for automated lead scoring.
-- Develop an interactive **Power BI** dashboard for business stakeholders.
-- Implement automated model retraining using newly collected customer data.
-- Monitor model performance and data drift to maintain long-term prediction reliability.
+- 🔗 Integrate the prediction engine with CRM platforms for automated lead scoring.
+- 📊 Develop an interactive Power BI dashboard for business stakeholders.
+- 🔄 Implement automated model retraining using newly collected customer data.
+- 📈 Monitor model performance and data drift to maintain long-term prediction reliability.
+- ☁️ Migrate the application to scalable cloud infrastructure for enterprise-level usage.
 
 ---
 
@@ -375,10 +415,10 @@ The final **Stacking Classifier** achieved the strongest overall performance, wh
 
 ```text
 Lead-Conversion-Intelligence-System/
+
 │
 ├── data/
-│   ├── lead_conversion_dataset.csv
-│   
+│   └── ExtraaLearn.csv
 │
 ├── images/
 │   ├── banner.png
@@ -387,10 +427,27 @@ Lead-Conversion-Intelligence-System/
 │   ├── final_model_metrics.png
 │   ├── confusion_matrix.png
 │   ├── shap_summary.png
-│   └── shap_waterfall.png
+│   ├── shap_waterfall.png
+│   ├── prediction_workspace.png
+│   ├── prediction_result.png
+│   ├── analytics_dashboard.png
+│   ├── ai_business_intelligence.png
+│   ├── executive_overview.png
+│   ├── feature_insights.png
+│   └── lead_feature_analysis.png
 │
 ├── notebooks/
 │   └── Lead_Conversion_Intelligence_System.ipynb
+│
+├── app.py
+├── predictor.py
+│
+├── meta_model.pkl
+├── lr_model.pkl
+├── rf_model.pkl
+├── scaler.pkl
+├── feature_columns.pkl
+├── booster_only.json
 │
 ├── README.md
 ├── requirements.txt
@@ -428,11 +485,16 @@ pip install -r requirements.txt
 
 ---
 
-### 4️⃣ Launch the Project
+### 4️⃣ Launch Streamlit Application
 
-Open the notebook using **Jupyter Notebook** or **Google Colab** and execute the cells sequentially to reproduce the complete workflow.
+Run the following command:
 
----
+```bash
+streamlit run app.py
+```
+
+The application will open in your browser and provide real-time lead conversion prediction, analytics dashboard, and AI-generated business recommendations.
+
 
 # 📦 Project Requirements
 
