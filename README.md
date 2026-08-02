@@ -389,6 +389,13 @@ Potential future improvements include:
 
 ---
 
+## 🚀 Live Demo
+
+Streamlit App:
+[lead-conversion-intelligence-system.streamlit.app](https://lead-conversion-intelligence-system.streamlit.app/)
+
+---
+
 # 🎯 Conclusion
 
 This project demonstrates a complete end-to-end machine learning solution for intelligent lead conversion prediction within the EdTech domain.
