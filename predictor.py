@@ -66,15 +66,21 @@ def predict_lead(user_input):
 
     prediction = int(probability >= 0.40)
 
-    confidence = round(
-        max(probability, 1 - probability) * 100,
-        2
-    )
+    confidence_score = abs(probability - 0.5) * 200
+
+    confidence_score = min(confidence_score, 100)
+
+    if confidence_score < 30:
+        confidence = "Low"
+    elif confidence_score < 60:
+        confidence = "Medium"
+    else:
+        confidence = "High"
 
     return {
         "prediction": prediction,
-        "probability": round(probability * 100, 2),
-        "confidence": confidence,
+        "Conversion Probability": round(probability * 100, 2),
+        "Model Confidence": confidence,
         "label": "Converted" if prediction == 1 else "Not Converted"
     }
 

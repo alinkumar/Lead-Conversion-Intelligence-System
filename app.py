@@ -37,10 +37,10 @@ if "page_views" not in st.session_state:
 if "priority_message" not in st.session_state:
     st.session_state.priority_message = "Not Generated"    
 
-if "Conversion Probability" not in st.session_state:
+if "probability" not in st.session_state:
     st.session_state.probability = 0
 
-if "Model Confidence" not in st.session_state:
+if "confidence" not in st.session_state:
     st.session_state.confidence = 0
 
 if "label" not in st.session_state:
@@ -874,9 +874,9 @@ if selected == "Prediction":
 
         prediction = result["prediction"]
 
-        probability = result["probability"]
+        probability = result["Conversion Probability"]
 
-        confidence = result["confidence"]
+        confidence = result["Model Confidence"]
 
         label = result["label"]
 
@@ -973,7 +973,7 @@ if selected == "Prediction":
             <div class="metric-card">
 
             <div class="metric-title">
-            Probability
+            Conversion Probability
             </div>
 
             <div class="metric-value">
@@ -995,11 +995,11 @@ if selected == "Prediction":
             <div class="metric-card">
 
             <div class="metric-title">
-            Confidence
+            Model Confidence
             </div>
 
             <div class="metric-value">
-            {confidence:.2f}%
+            {confidence}
             </div>
 
             <div class="metric-line"></div>
@@ -1254,7 +1254,7 @@ with a3:
     </div>
 
     <div class="metric-value">
-    {:.2f}%
+    {}%
     </div>
 
     <div class="metric-line"></div>
@@ -1449,7 +1449,7 @@ with b1:
     </div>
 
     <div class="metric-value">
-    {float(st.session_state.confidence):.2f}%
+    {st.session_state.confidence}
     </div>
 
     <div class="metric-line"></div>
@@ -1468,12 +1468,12 @@ with b2:
     <div class="metric-card">
 
     <div class="metric-title">
-    Sales Priority
+    Conversion Probability
     </div>
 
-    <div class="metric-value">
-    {float(st.session_state.probability):.2f}%
-    </div>
+   <div class="metric-value">
+   {float(st.session_state.probability):.2f}%
+   </div>
 
     <div class="metric-line"></div>
 
@@ -1943,8 +1943,8 @@ with report_col1:
 
     <br><br>
 
-    <b>Confidence:</b>
-    {confidence:.2f}%
+    <b>Model Confidence:</b>
+    {confidence}
 
     <br><br>
 
