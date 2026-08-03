@@ -64,7 +64,7 @@ def predict_lead(user_input):
         meta_model.predict_proba(meta_features)[0][1]
     )
 
-    prediction = int(probability >= 0.50)
+    prediction = int(probability >= 0.40)
 
     confidence = round(
         max(probability, 1 - probability) * 100,

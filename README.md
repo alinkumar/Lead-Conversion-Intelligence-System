@@ -226,6 +226,8 @@ The close alignment between training and testing accuracy demonstrates that the 
 
 The balanced Precision, Recall, and F1-Score further indicate that the model performs consistently across both converted and non-converted leads, making it suitable for practical lead scoring applications.
 
+The prediction threshold was optimized from 0.50 to 0.40 to improve lead identification and reduce missed conversion opportunities.
+
 ---
 
 ## 🎯 Confusion Matrix
@@ -398,8 +400,12 @@ Potential future improvements include:
 
 ## 🚀 Live Demo
 
-Streamlit App:
+Experience the deployed AI-powered Lead Conversion Intelligence System:
+
+🔗 Streamlit Application:
 [lead-conversion-intelligence-system.streamlit.app](https://lead-conversion-intelligence-system.streamlit.app/)
+
+The application provides real-time lead scoring, conversion probability estimation, and business recommendations.
 
 ---
 

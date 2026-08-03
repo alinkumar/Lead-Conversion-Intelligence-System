@@ -37,10 +37,10 @@ if "page_views" not in st.session_state:
 if "priority_message" not in st.session_state:
     st.session_state.priority_message = "Not Generated"    
 
-if "probability" not in st.session_state:
+if "Conversion Probability" not in st.session_state:
     st.session_state.probability = 0
 
-if "confidence" not in st.session_state:
+if "Model Confidence" not in st.session_state:
     st.session_state.confidence = 0
 
 if "label" not in st.session_state:
@@ -2066,11 +2066,11 @@ report_data = {
     ],
 
     "Probability (%)": [
-        round(float(st.session_state.get("probability",0)),2)
+        round(float(st.session_state.get("Conversion Probability",0)),2)
     ],
 
     "Confidence (%)": [
-        round(float(st.session_state.get("confidence",0)),2)
+        round(float(st.session_state.get("Model Confidence",0)),2)
     ],
 
     "Lead Quality": [
