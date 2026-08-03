@@ -870,7 +870,7 @@ if selected == "Prediction":
         ):
 
             result = predict_lead(user_input)
-            st.write(result)
+            
 
 
         prediction = result["prediction"]
